@@ -6,7 +6,7 @@ class MyMayAvi:
     coordinate_text = None
     selected_rectangle = None
     #output_file = "C:/Users/stj.rnozdemir/Desktop/Copy3.dt2"
-    dted_file_path = "C:/Users/stj.fbkuzucu/Desktop/Copy3.dt2"
+    dted_file_path = "C:/Users/user-name/Desktop/Copy3.dt2"
 
     def __init__(self):
         self.actor = None
@@ -97,7 +97,7 @@ class MyMayAvi:
 
 
 
-        with rasterio.open("C:/Users/stj.fbkuzucu/Desktop/Copy3.dt2") as src:
+        with rasterio.open("C:/Users/user-name/Desktop/Copy3.dt2") as src:
             elev = src.read(1)
             nrows, ncols = elev.shape
             print(np.arange(nrows))
@@ -109,7 +109,7 @@ class MyMayAvi:
             return mesh
 
     def GetMesh(self):
-        with rasterio.open("C:/Users/stj.fbkuzucu/Desktop/Copy3.dt2") as src:
+        with rasterio.open("C:/Users/user-name/Desktop/Copy3.dt2") as src:
             elev = src.read(1)
             nrows, ncols = elev.shape
             print(np.arange(nrows))
